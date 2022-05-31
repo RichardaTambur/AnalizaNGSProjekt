@@ -1,12 +1,10 @@
-##Spis zawartości
+# NGS ANALYSIS PROJECT
 
-- RAPORT.MD - opis poszczególnych etapów analiz i ich interpretacji
-- data/ - katalog z outputami (pliki VCF, wizualizacje, raporty, logi) z poszczególnych etapów projektu
+This repository was made for performing Next Generation Sequencing analysis for the project from university course.
 
-pliki: .fastq - pobrane dane z SRA
-        _fastqc_preclean.html - wykresy przed czyszczeniem
+# REPOSITORY CONTENT 
 
-- src/ - katalog z skryptami
-
-
-- 
+### data/  
+Handles all output files, including results
+### RAPORT.MD  
+Describes the process of the analysis and interpretes the results.
