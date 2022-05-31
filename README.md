@@ -4,11 +4,18 @@ This repository was made for performing Next Generation Sequencing analysis for 
 
 # REPOSITORY CONTENT 
 
-### data/  
+### Shortcuts explanation:
+Files ended with:  
+4545 - belong to yeast, vac6, wild-type  
+4546 - yeast, vac6, mutant  
+4547 - yeast, vac22, wild-type  
+
+## data/  
 Result files.
 
-#### Includes:
+### Includes:
 - **Quality_raw_data** - fastqc files with informations about the quality of examined sequences
+files ended with 4545 belong to 
 
 - **Quality_trimmed_data** - fastqc files with informations about the quality of examined sequences after cleaning
 
