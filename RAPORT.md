@@ -67,7 +67,7 @@ To download the files from SRA database fastdump was used, because it has an opt
 On fasta files freshly downloaded from SRA database I performed quality tests using fastqc, from which I could read quality scores. Per base sequence quality showed that many bases of the sequences had quality lower than 20, so they needed to be cutted.  
 
 ### FASTQ  
-The output of trimmomatic program, which was used to trim bases with low quality, was two fastq files for each sequence. The encoding was Illumina 1.9 what we needed to mention in the command line, as well with information how big we want our sliding window to be and what was the minimal lenght of the sequences which we wanted to spare after cutting. First file, paired gave us info about which sequences from both strands survived and unpaired where the ones that was disqualified. For further operations only the paired files were used. 
+The output of trimmomatic program, which was used to trim bases with low quality, was four fastq files for each sequence. The encoding was Illumina 1.9 what we needed to mention in the command line, as well with information how big we want our sliding window to be and what was the minimal lenght of the sequences which we wanted to spare after cutting. First file, paired gave us info about which sequences from both strands survived and unpaired where the ones that was disqualified. For further operations only the paired files were used. 
 
 ### FASTA  
 Reference genome was downloaded in parts, separate file for each chromosome. I used *cat > /* command to concatenate them all into one, so it could be used for the aligment.
@@ -82,3 +82,4 @@ In txt format I have saved statistics after aligment, which were performed with 
 Bcftools was used to detect polymorphisms in the given sequences. Even if bcf format is smaller, the next tool required vcf format, so we transformed it in the same command line. The results were needed to be visualised, so I could interprete them properly.
 
 ### VEP
+HTML files allowed us to see the result of our analysis with the biological meaning. The SNP were detected, as well as other variations. All the data are stored in VEP files. 
