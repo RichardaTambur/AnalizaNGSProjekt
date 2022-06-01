@@ -24,6 +24,8 @@ files ended with 4545 belong to
 - **flagstat_data** - containing informations about the quality of aligment
 
 - **VCF files** - with detected polymorphisms and other mutations
+  
+- **Polymorphisms_vep** - contains vep files and html analysis
 
 
 
