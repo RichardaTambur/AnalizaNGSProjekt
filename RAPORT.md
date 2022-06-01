@@ -57,7 +57,7 @@ Database used for aquiring reference genome:
 **bcftools mpileup -f** */genome_reference/Saccharomyces_cerevisiae.R64-1-1.dna.chromosom.fa aln_4545_marked.bam* | **bcftools call** *-mv -Ob -o polymorphism_4545.bcf*  
 **bcftools convert** *polymorphism_4547.bcf -o polymorphism_4547.vcf*
 
-### - 
+### - Analysis of polymorphism and biological sense
 ./vep -i polymorphism_4545.vcf -o detection_4545.vep --species saccharomyces_cerevisiae --database --genomes
   
   
